@@ -1,4 +1,3 @@
-curl -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.2.1-linux-x86_64.tar.gz
-tar -xzvf elasticsearch-7.2.1-linux-x86_64.tar.gz
-rm elasticsearch-7.2.1-linux-x86_64.tar.gz
-mv elasticsearch-7.2.1 elasticsearch
+# sed -i 's/old-text/new-text/g' input.txt
+sed -i 's/-Xms1g/-Xms768m/g' /home/elastic/elasticsearch/config/jvm.options
+sed -i 's/-Xmx1g/-Xmx768m/g' /home/elastic/elasticsearch/config/jvm.options
